@@ -1,48 +1,121 @@
-.mi-rectangulo {
-    width: 1296px;
-    height: 30px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+    margin: 0
+}
+
+#grid-container1 {
+    display: grid;
+    gap: 1rem;
+    max-width: 1000px;
+    overflow: hidden;
+    grid-template-rows: auto 1fr 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+    
+}
+
+#navegador {
+
     background-color: #255538;
     border-radius: 6px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    grid-area: 1/ 1 / 2 / 6;
 }
-.mi-rectangulo button {
+#navegador button {
     background-color: #fff;
     border: none;
     padding: 5px 10px;
     border-radius: 30px;
-    cursor: pointer;
+    cursor: pointer; 
   }
-
 .bitcook-text {
     font-size: 18px;
     font-weight: bold;
-    color: #fff; /* Color inicial */
-    transition: color 0.3s; /* Transición de color al interactuar */
+    color: #fff; 
+    transition: color 0.3s; 
     cursor: pointer;
 }
 .bitcook-text:hover {
-    color: #d68080; /* Color al pasar el ratón por encima */
+    color: #d68080; 
 }
-
 .enviar-text {
+    
     font-size: 9px;
     font-weight: 2px;
     color: #fff; 
     transition: color 0.3s; 
     cursor: pointer;
-    justify-content: space-between;
 }
 .enviar-text:hover {
     color: #d68080;
 }
-
-
-
-body {
-    background-color: #F3E5D8;
-    
+.imagen1 {
+    background-image: url(../images/5a80e6e1cd7c7ea0f50d200b0ad11587.png);
+    background-position: center;
+    padding: 100px;
+    grid-area: 2 / 2 / 3 / 5;
 }
+ .recipe-card {
+    grid-area: 3 / 2  / 4 / 5;
+ }
+  .recipe-header {
+    grid-column: span 12;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+  }
+  
+  .recipe-title {
+    grid-column: span 12;
+    grid-row: 1;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+  }
+  
+  .recipe-time {
+    grid-column: span 12;
+    grid-row: 2;
+    margin: 0;
+    font-size: 0.875rem;
+    color: #666;
+    
+  }
+  
+  .recipe-image {
+    grid-column: span 12;
+    grid-row: 3;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0.25rem;
+    
+  }
+  
+  .recipe-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  
+  
+
+
+
+
+
+
+
 
