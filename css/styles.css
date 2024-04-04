@@ -11,6 +11,7 @@ body {
 #grid-container1 {
     display: grid;
     gap: 1rem;
+    margin: 20px auto 0 auto;
     max-width: 1000px;
     overflow: hidden;
     grid-template-rows: auto 1fr 100px;
@@ -61,6 +62,8 @@ body {
     background-image: url(../images/5a80e6e1cd7c7ea0f50d200b0ad11587.png);
     background-position: center;
     padding: 100px;
+    text-align: center;
+    color: aqua;
     grid-area: 2 / 2 / 3 / 5;
 }
  .recipe-card {
