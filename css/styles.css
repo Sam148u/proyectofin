@@ -17,7 +17,6 @@ body {
     grid-template-rows: auto 1fr 100px;
     grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
     
-    
 }
 
 #navegador {
@@ -70,17 +69,70 @@ body {
     color: rgb(0, 0, 0);
     grid-area: 2 / 2 / 3 / 5;
 }
+.best-recipes {
+  color: #7E4333;
+  grid-area: 3 / 2 / 4 / 3;
+}
  .recipe-card-1 {
-  background-color: white;
-    grid-area: 3 / 2  / 4 / 3;
+    background: #ffffff;
+    grid-area: 4 / 2 / 5 / 3;
    display: block;
-    
-    color: inherit;
  }
 
 .recipe-card-1:hover {
     
     cursor: pointer;
+}
+
+.recipe-card-2 {
+  background: #ffffff;
+  grid-area: 5 / 2 / 6 / 3;
+ display: block;
+}
+
+.recipe-card-2:hover {
+  
+  cursor: pointer;
+}
+.recipe-card-3 {
+  background: #ffffff;
+  grid-area: 4 / 3 / 5 / 4;
+ display: block;
+}
+
+.recipe-card-3:hover {
+  
+  cursor: pointer;
+}
+.recipe-card-4 {
+  background: #ffffff;
+  grid-area: 5 / 3 / 6 / 4;
+ display: block;
+}
+
+.recipe-card-4:hover {
+  
+  cursor: pointer;
+}
+.recipe-card-5 {
+  background: #ffffff;
+  grid-area: 4 / 4 / 5 / 5;
+ display: block;
+}
+
+.recipe-card-5:hover {
+  
+  cursor: pointer;
+}
+.recipe-card-6 {
+  background: #ffffff;
+  grid-area: 5 / 4 / 6 / 5;
+ display: block;
+}
+
+.recipe-card-6:hover {
+  
+  cursor: pointer;
 }
   .recipe-header {
     grid-column: span 12;
@@ -106,7 +158,7 @@ body {
     grid-row: 2;
     margin: 0;
     font-size: 0.875rem;
-    color: #666;
+    
     
   }
   
@@ -122,6 +174,16 @@ body {
   .recipe-image img {
     width: 100%;
     height: auto;
+  }
+
+  #footer {
+    background-color: #255538;
+    border-radius: 6px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    grid-area: 6 / 1 / 7 / 6;
   }
   
   
