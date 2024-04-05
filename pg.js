@@ -18,3 +18,8 @@ document.querySelector("span:nth-child(2)").addEventListener("click", function()
     
     window.location.href = "form.html";
 });
+const recipeCard = document.getElementById('recipe1');
+
+recipeCard.addEventListener('click', () => {
+    window.location.href = 'recipe1.html';
+});

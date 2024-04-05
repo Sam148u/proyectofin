@@ -11,11 +11,11 @@ body {
 #grid-container1 {
     display: grid;
     gap: 1rem;
-    margin: 20px auto 0 auto;
-    max-width: 1000px;
+    margin: 10px auto 0 auto;
+    max-width: 1280px;
     overflow: hidden;
     grid-template-rows: auto 1fr 100px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
     
     
 }
@@ -25,7 +25,7 @@ body {
     background-color: #255538;
     border-radius: 6px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 10px;
     grid-area: 1/ 1 / 2 / 6;
@@ -38,6 +38,7 @@ body {
     cursor: pointer; 
   }
 .bitcook-text {
+  margin-right: auto;
     font-size: 18px;
     font-weight: bold;
     color: #fff; 
@@ -48,7 +49,7 @@ body {
     color: #d68080; 
 }
 .enviar-text {
-    
+    margin-right: 5px;
     font-size: 9px;
     font-weight: 2px;
     color: #fff; 
@@ -62,13 +63,25 @@ body {
     background-image: url(../images/5a80e6e1cd7c7ea0f50d200b0ad11587.png);
     background-position: center;
     padding: 100px;
-    text-align: center;
-    color: aqua;
+    background-size: cover; 
+    height: auto;
+    font-size: large;
+    text-align: left;
+    color: rgb(0, 0, 0);
     grid-area: 2 / 2 / 3 / 5;
 }
- .recipe-card {
-    grid-area: 3 / 2  / 4 / 5;
+ .recipe-card-1 {
+  background-color: white;
+    grid-area: 3 / 2  / 4 / 3;
+   display: block;
+    
+    color: inherit;
  }
+
+.recipe-card-1:hover {
+    
+    cursor: pointer;
+}
   .recipe-header {
     grid-column: span 12;
     grid-row: 1;
