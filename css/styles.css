@@ -188,9 +188,89 @@ body {
     background-color: #333333;
   }
   
-  
+  @media (max-width: 768px) {
+      #navegador {
+        grid-area: 1/ 1 / 2 / 5;
+      }
+        .imagen1 {
+          grid-area: 2/2/3/4;
+        }
+        .best-recipes {
+          grid-area: 3 / 2 / 4 / 3;
+        }
+
+        #recipe1 {
+          grid-area: 4 / 2 / 5 / 3;
+        }
+        
+        #recipe2 {
+          grid-area: 5 / 2 / 6 / 3;
+        }
+        
+        #recipe3 {
+          grid-area: 4 / 3 / 5 / 4;
+        }
+        
+        #recipe4 {
+          grid-area: 5 / 3 / 6 / 4;
+        }
+        
+        #recipe5 {
+          grid-area: 6 / 2 / 7 / 3;
+        }
+        
+        #recipe6 {
+          grid-area: 6 / 3 / 7 / 4;
+        }
+        #footer {
+          
+          grid-area: 7 / 1 / 8 / 5;
+        }
 
 
+    
+}
+
+
+@media (max-width: 480px) {
+  #navegador {
+    grid-area: 1/ 1 / 2 / 4;
+  }
+    .imagen1 {
+      grid-area: 2/2/3/3;
+    }
+    .best-recipes {
+      grid-area: 3 / 2 / 4 / 3;
+    }
+
+    #recipe1 {
+      grid-area: 4 / 2 / 5 / 3;
+    }
+    
+    #recipe2 {
+      grid-area: 5 / 2 / 6 / 3;
+    }
+    
+    #recipe3 {
+      grid-area: 7 / 2 / 8 / 3;
+    }
+    
+    #recipe4 {
+      grid-area: 8 / 2 / 9 / 3;
+    }
+    
+    #recipe5 {
+      grid-area: 9 / 2 / 10 / 3;
+    }
+    
+    #recipe6 {
+      grid-area: 10 / 2 / 11 / 3;
+    }
+    #footer {
+      
+      grid-area: 11 / 1 / 12 / 4;
+    }
+}
 
 
 
