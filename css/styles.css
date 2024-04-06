@@ -2,6 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #F3E5D8
+    ;
 }
 * {
     box-sizing: border-box;
@@ -36,6 +38,8 @@ body {
     border-radius: 30px;
     cursor: pointer; 
   }
+  
+  
 .bitcook-text {
   margin-right: auto;
     font-size: 18px;
@@ -66,78 +70,65 @@ body {
     height: auto;
     font-size: large;
     text-align: left;
-    color: rgb(0, 0, 0);
+    color: #ffffff;
     grid-area: 2 / 2 / 3 / 5;
 }
 .best-recipes {
+  font-family: DM Serif Display;
+  font-size: 1.7rem;
+  margin-top: 30px;
   color: #7E4333;
   grid-area: 3 / 2 / 4 / 3;
 }
- .recipe-card-1 {
-    background: #ffffff;
-    grid-area: 4 / 2 / 5 / 3;
+ .recipe-card {
+    border-radius: 5px;
+    background: white;
    display: block;
  }
 
-.recipe-card-1:hover {
+.recipe-card:hover {
     
     cursor: pointer;
 }
-
-.recipe-card-2 {
-  background: #ffffff;
-  grid-area: 5 / 2 / 6 / 3;
- display: block;
-}
-
-.recipe-card-2:hover {
+.recipe-card  img {
   
-  cursor: pointer;
-}
-.recipe-card-3 {
-  background: #ffffff;
-  grid-area: 4 / 3 / 5 / 4;
- display: block;
-}
+  border-radius: 5px;
+  margin: 5px 5px 0 5px;
+  width: 346px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+    }
+    
+    
+    #recipe1 {
+      grid-area: 4 / 2 / 5 / 3;
+    }
+    
+    #recipe2 {
+      grid-area: 5 / 2 / 6 / 3;
+    }
+    
+    #recipe3 {
+      grid-area: 4 / 3 / 5 / 4;
+    }
+    
+    #recipe4 {
+      grid-area: 5 / 3 / 6 / 4;
+    }
+    
+    #recipe5 {
+      grid-area: 4 / 4 / 5 / 5;
+    }
+    
+    #recipe6 {
+      grid-area: 5 / 4 / 6 / 5;
+    }
 
-.recipe-card-3:hover {
-  
-  cursor: pointer;
-}
-.recipe-card-4 {
-  background: #ffffff;
-  grid-area: 5 / 3 / 6 / 4;
- display: block;
-}
-
-.recipe-card-4:hover {
-  
-  cursor: pointer;
-}
-.recipe-card-5 {
-  background: #ffffff;
-  grid-area: 4 / 4 / 5 / 5;
- display: block;
-}
-
-.recipe-card-5:hover {
-  
-  cursor: pointer;
-}
-.recipe-card-6 {
-  background: #ffffff;
-  grid-area: 5 / 4 / 6 / 5;
- display: block;
-}
-
-.recipe-card-6:hover {
-  
-  cursor: pointer;
-}
   .recipe-header {
+    color: #7E4333;
     grid-column: span 12;
     grid-row: 1;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     
@@ -171,11 +162,6 @@ body {
     
   }
   
-  .recipe-image img {
-    width: 100%;
-    height: auto;
-  }
-
   #footer {
     background-color: #255538;
     border-radius: 6px;
@@ -185,8 +171,22 @@ body {
     padding: 10px;
     grid-area: 6 / 1 / 7 / 6;
   }
+  .bit {
+    color: white;
+  }
   
+  .dark-mode {
+    .recipe-card {
+      background-color: #1f1f1f;
+    }
+    background-color: #000000;
+    color: #f1eded;
+  }
   
+  /* Add this CSS class for elements with a white background */
+  .dark-mode.white-bg {
+    background-color: #333333;
+  }
   
   
 
