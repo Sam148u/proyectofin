@@ -141,7 +141,8 @@ body {
     margin: 0;
     font-size: 1.5rem;
     font-weight: bold;
-    
+    position: relative;
+    left: 5px;
   }
   
   .recipe-time {
@@ -149,7 +150,8 @@ body {
     grid-row: 2;
     margin: 0;
     font-size: 0.875rem;
-    
+    position: relative;
+    left: 5px;
     
   }
   
@@ -187,8 +189,8 @@ body {
   .dark-mode.white-bg {
     background-color: #333333;
   }
-  
-  @media (max-width: 768px) {
+  /*recuerda que no hay comit de esto para abajo*/
+  @media screen and (min-width: 481px) and (max-width: 768px) {
       #navegador {
         grid-area: 1/ 1 / 2 / 5;
       }
