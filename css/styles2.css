@@ -242,6 +242,7 @@ body {
    display: block;
   }
   .recipe:hover {
+    background-color: #1ee46a;
    cursor: pointer;
   } 
   .recipe img {

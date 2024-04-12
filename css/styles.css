@@ -88,7 +88,7 @@ body {
  }
 
 .recipe-card:hover {
-    
+    background-color: #40e281;
     cursor: pointer;
 }
 .recipe-card  img {
