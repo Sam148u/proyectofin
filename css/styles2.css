@@ -180,6 +180,7 @@ body {
   .Preparationtime{
     height: 130px;
     margin: 20px;
+    border-radius: 5px;
     background-color: #FFF7FC;
     
   }
@@ -201,6 +202,7 @@ body {
     margin: 20px;
   }
   .about-recipe {
+    border-radius: 5px;
     background-color: #ffffff;
     grid-area: 2 / 4 / 3 / 5;
   }
@@ -224,6 +226,7 @@ body {
     font-weight: bold;
   }
   .morerecip {
+    border-radius: 5px;
     grid-area: 3/4/4/5;
     background-color: #ffffff;
   }
