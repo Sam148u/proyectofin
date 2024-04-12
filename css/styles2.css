@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: DM Sans;
     margin: 0;
     padding: 0;
     background-color: #F3E5D8
@@ -83,6 +83,25 @@ body {
     .titleintruccion {
       color: #ffffff;
     }
+    .Nutricion {
+      color: #ffffff;
+    }
+    .row {
+      border-bottom: 2px solid #ffffff;
+    }
+    .numnutri {
+      color: #ffffff;
+    }
+    .morerecip {
+      background-color: #2F2F2F;
+    }
+    .more-recipe {
+      color: #ffffff;
+    }
+    .recipe {
+      background-color: #2F2F2F ;
+    }
+    
     background-color: #000000;
     color: #f1eded;
   }
@@ -93,12 +112,16 @@ body {
   }
   .recipeheader {
     color: #7E4333;
+    grid-column: span 12;
+    
+    flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
   }
   .recipe-inf {
     border-radius: 5px;
     background: white;
-   display: block;
+   
    overflow: hidden;
    width: 100%;
    
@@ -107,12 +130,13 @@ body {
     border-radius: 5px;
     margin: 20px 20px 0 20px;
     width: 683.2px;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
     object-position: center;
       }
   .recipe-inf{
-    grid-area: 2/2/4/4;
+    overflow: hidden;
+    grid-area: 2/2/5/4;
   } 
   .recipetitle {
     margin: 0;
@@ -182,22 +206,55 @@ body {
   }
 
   .titleingrdient {
-    margin: 10px 20px 0 10px;
+    margin: 10px 20px ;
     color:#7E4333;
   }
   .Nutricion {
+    margin: 20px 20px ;
     color:#7E4333;
   }
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    #navegador {
-      grid-area: 1/ 1 / 2 / 5;
-    }
-    .recipe-inf {
-      grid-area: 2/ 1 / 4 / 5;
-    }
-}
-
-#footer2 {
+  .row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #7E4333;
+    margin: 20px;
+  }
+  .numnutri {
+    color: #7E4333;
+    font-weight: bold;
+  }
+  .morerecip {
+    grid-area: 3/4/4/5;
+    background-color: #ffffff;
+  }
+  .more-recipe {
+    color: #7E4333;
+    margin: 20px;
+  }
+  .recipe {
+    margin: 0 10px 10px 0;
+    border-radius: 5px;
+    background: white;
+    overflow: hidden;
+   display: block;
+  }
+  .recipe:hover {
+   cursor: pointer;
+  } 
+  .recipe img {
+    float: left;
+    border-radius: 5px;
+    margin: 0 20px 20px 20px ;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  object-position: center;
+  }
+  .txt-recip {
+    position: relative;
+  top: 20px;
+  }
+  #footer2 {
   background-color: #255538;
     border-radius: 6px;
     display: flex;
@@ -206,3 +263,65 @@ body {
     padding: 10px;
     grid-area: 5 / 1 / 6 / 6;
 }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    #grid-container2 {
+      grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+    }
+    #navegador {
+      grid-area: 1/ 1 / 2 / 5;
+    }
+    .recipe-inf {
+      grid-area: 2/ 2 / 6 / 4;
+    }
+    .recipe-inf  img {
+      border-radius: 5px;
+      margin: 20px 20px 0 20px;
+      width: 530px;
+      height: 250px;
+      object-fit: cover;
+      object-position: center;
+        }
+    .about-recipe {
+      grid-area: 6 / 2 / 7 / 4;
+    }
+    .morerecip {
+      grid-area: 7 / 2 / 8 / 4;
+    }
+
+    #footer2 {
+      grid-area: 8 / 1 / 9 / 5;
+    }
+}
+
+@media (max-width: 480px) {
+  #grid-container2 {
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+  }
+  #navegador {
+    grid-area: 1/ 1 / 2 / 4;
+  }
+  .recipe-inf {
+    grid-area: 2/ 2 / 6 / 3;
+  }
+  .recipe-inf  img {
+    border-radius: 5px;
+    margin: 20px 20px 0 20px;
+    width: 260px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+      }
+  .about-recipe {
+    grid-area: 6 / 2 / 7 / 3;
+  }
+  .morerecip {
+    grid-area: 7 / 2 / 8 / 3;
+  }
+
+  #footer2 {
+    grid-area: 8 / 1 / 9 / 4;
+  }
+}
+
+
+

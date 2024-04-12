@@ -185,11 +185,10 @@ body {
     color: #f1eded;
   }
   
-  /* Add this CSS class for elements with a white background */
   .dark-mode.white-bg {
     background-color: #333333;
   }
-  /*recuerda que no hay comit de esto para abajo*/
+  
   @media screen and (min-width: 481px) and (max-width: 768px) {
       #navegador {
         grid-area: 1/ 1 / 2 / 5;
@@ -228,9 +227,6 @@ body {
           
           grid-area: 7 / 1 / 8 / 5;
         }
-
-
-    
 }
 
 

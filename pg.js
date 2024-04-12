@@ -26,5 +26,11 @@ recipeCards.forEach((card) => {
     window.location.href = "recipe1.html";
   });
 });
- 
+const recipe = document.querySelectorAll('.recipe');
+
+recipe.forEach((recipe) => {
+  recipe.addEventListener('click', () => {
+    window.location.href = "recipe2.html";
+  });
+});
 

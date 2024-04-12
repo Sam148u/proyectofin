@@ -4,27 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles3.css">
     
 </head>
 <body>
     
-    <div id="grid-container1">
+    <div id="grid-container3">
         <div id="navegador">
         <span class="bitcook-text"onclick="redirigir()">BitCook</span>
         <span class="enviar-text"onclick="redirigir()">Envia tu receta</span>
         <button  id="modoOscuro">🌙</button >
         </div>
-    
-    
-   
-    
-     
+
+        <div class="turecipe" >
+            <h1 class="sendrecip">Send us your recipe!</h1>
+            <p class="sendrecip2">They say everything looks better with odd numbers of things. But sometimes I put even numbers--just to upset the critics. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. </p>
+            <form action="/submit-recipe" method="post">
+                <label class="recipeName" for="recipeName">Nombre de la receta:</label><br>
+                <input type="text" id="recipeName" name="recipeName" required><br><br>
+            
+                <label class="prepTime" for="prepTime">Tiempo de preparación:</label><br>
+                <input type="text" id="prepTime" name="prepTime" required><br><br>
+            
+                <label class="ingredients" for="ingredients">Ingredientes:</label><br>
+                <textarea id="ingredients" name="ingredients" rows="4" cols="50" required></textarea><br><br>
+            
+                <label class="instructions" for="instructions">Instrucciones:</label><br>
+                <textarea id="instructions" name="instructions" rows="4" cols="50" required></textarea><br><br>
+            
+                <input class="Enviar" type="submit" value="Send">
+            </form>
+        </div>
+        <div id="footer2">
+            <span class="bitcook-text"onclick="redirigir()">BitCook</span>
+            <p class="bit">© 2024 Bogotá Institute of Technology.</p>
+        </div> 
     
 
-    
-    
-    
     
     <script src="./pg.js"></script>
 </body>
